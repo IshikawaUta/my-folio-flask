@@ -10,20 +10,20 @@
   ],
   "routes": [
     {
-      "src": "/static/(.*)", // <<< RUTE PENTING UNTUK FILE STATIS!
-      "dest": "/static/$1"  // <<< Memberitahu Vercel menyajikan dari folder static
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
     },
     {
-      "src": "/robots.txt", // Rute untuk robots.txt
-      "dest": "app.py"      // Diarahkan ke fungsi Flask (sesuai app.py Anda)
+      "src": "/robots.txt",
+      "dest": "app.py"
     },
     {
-      "src": "/sitemap.xml", // Rute untuk sitemap.xml
-      "dest": "app.py"       // Diarahkan ke fungsi Flask (sesuai app.py Anda)
+      "src": "/sitemap.xml",
+      "dest": "app.py"
     },
     {
-      "src": "/(.*)",      // Rute catch-all untuk yang lainnya (termasuk root)
-      "dest": "app.py"     // Diarahkan ke fungsi Flask
+      "src": "/(.*)",
+      "dest": "app.py"
     }
   ]
 }
