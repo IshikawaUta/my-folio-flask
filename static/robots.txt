@@ -1,0 +1,8 @@
+# robots.txt untuk Portofolio Eka Saputra
+
+User-agent: *
+# Izinkan semua crawler untuk mengakses semua konten di situs
+Allow: /
+
+# Arahkan crawler ke lokasi file sitemap
+Sitemap: https://www.ekasaputra.my.id/sitemap.xml

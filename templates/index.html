@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="portofolio web developer, Eka Saputra, jasa pembuatan website, web developer freelance, HTML, CSS, JavaScript, Flask, Tailwind, Bootstrap, React, proyek web, bikin website">
+    <meta property="og:title" content="Portofolio Eka Saputra | Web Developer">
+    <meta name="description" content="Jelajahi portofolio proyek web development Eka Saputra, lihat demo proyek, dan temukan layanan pembuatan website profesional yang modern dan responsif.">
+    <meta property="og:description" content="Jelajahi portofolio proyek web development Eka Saputra dan temukan layanan pembuatan website profesional.">
+    <title>Portofolio Eka Saputra | Web Developer Profesional & Jasa Website</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/foto-saya.png') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Eka Saputra",
+    "url": "https://www.ekasaputra.my.id",
+    "image": "{{ url_for('static', filename='img/foto-saya.png') }}",
+    "jobTitle": "Web Developer",
+    "additionalType": "https://schema.org/SoftwareDeveloper",
+    "description": "Sebagai seorang web developer, saya berdedikasi untuk menciptakan pengalaman digital yang menarik dan fungsional. Saya memiliki pemahaman yang kuat tentang pengembangan front-end dan back-end, memungkinkan saya untuk membangun aplikasi web yang lengkap dan dinamis.",
+    "knowsAbout": [
+      "Web Development", "Front-end Development", "Back-end Development",
+      "HTML5", "CSS3", "JavaScript", "Python", "Flask", "Tailwind CSS",
+      "Bootstrap", "React", "Gatsby", "Astro", "Responsive Design"
+    ],
+    "sameAs": [
+      "https://github.com/IshikawaUta",
+      "https://wa.me/+62895701060973"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Sales or technical support",
+      "email": "mailto:komikers09@gmail.com"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Portofolio Eka Saputra | Web Developer Profesional & Jasa Website",
+    "url": "https://www.ekasaputra.my.id",
+    "description": "Jelajahi portofolio proyek web development Eka Saputra dan temukan layanan pembuatan website profesional.",
+    "potentialAction": { // Blok potentialAction dimulai di sini
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        // **WAJIB diganti:** URL hasil pencarian situs Anda, dengan "{search_term_string}"
+        // Contoh jika hasil pencarian di: https://www.ekasaputra.my.id/cari?q=istilah
+        "urlTemplate": "https://www.ekasaputra.my.id/cari?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    } // Blok potentialAction selesai di sini
+  }
+]
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">Portofolio</a>
+            </div>
+            <nav>
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#proyek">Proyek</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <img src="{{ url_for('static', filename='img/foto-saya.png') }}" alt="profile" width="200" height="200" loading="lazy">
+            <div class="container">
+                <h1>Halo, Saya Eka Saputra, Web Developer</h1>
+                <p>Selamat datang di portofolio online saya. Saya berfokus pada pengembangan web yang fungsional dan menarik, membangun pengalaman digital yang interaktif untuk berbagai kebutuhan.</p>
+                <a href="#proyek" class="button">Proyek Saya</a>
+            </div>
+        </section>
+
+        <section id="tentang" class="about">
+            <div class="container">
+                <h2>Tentang Saya</h2>
+                <p>Sebagai seorang web developer profesional yang bersemangat, saya berdedikasi untuk menciptakan solusi digital yang inovatif dan berfokus pada pengguna. Saya memiliki keahlian dalam pengembangan "front-end" (dengan teknologi modern seperti HTML5, CSS3, JavaScript, dan framework seperti React atau Tailwind) dan "back-end" (menggunakan Python dengan framework Flask, atau teknologi relevan lainnya). Kombinasi keterampilan ini memungkinkan saya untuk membangun "aplikasi web" yang kuat, dinamis, responsif, dan memberikan pengalaman pengguna yang mulus dari awal hingga akhir.</p>
+            </div>
+        </section>
+
+        <section id="proyek" class="projects">
+            <div class="container">
+                <h2>Proyek Saya</h2>
+                <div class="project-grid">
+                    <div class="project-item">
+                        <img src="{{ url_for('static', filename='img/proyek-1.jpg') }}" alt="Proyek 1" loading="lazy">
+                        <h3>Game Tebak Angka</h3>
+                        <p>Website game sederhana berbasis tebak angka untuk menguji logika. Dikembangkan menggunakan framework "Flask" di sisi backend serta "HTML5", "CSS", dan "JavaScript" untuk tampilan dan interaksi pengguna. Lihat demonya!</p>
+                        <a href="https://game-tebak-angka-one.vercel.app/" class="touch">Demo Game Tebak Angka</a>
+                    </div>
+                    <div class="project-item">
+                        <img src="{{ url_for('static', filename='img/proyek-2.jpg') }}" alt="Proyek 2" height="213" loading="lazy">
+                        <h3>Game Matematika</h3>
+                        <p>Website game edukasi yang melatih kemampuan berhitung cepat melalui soal-soal matematika. Dibangun dengan framework "Flask" di backend, serta "HTML5", "CSS", dan "JavaScript" untuk antarmuka yang interaktif. Mainkan gamenya!</p>
+                        <a href="https://game-mtk.vercel.app/play" class="touch">Mainkan Game Matematika</a>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+        </section>
+
+        <section id="jasa-website" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+          <h2 class="text-3xl font-bold mb-4">Jasa Pembuatan Website</h2>
+          <p class="text-gray-600 mb-8">
+            Tampilkan identitas bisnismu secara profesional di dunia digital. Kami menyediakan jasa pembuatan website
+            yang modern, responsif, dan sesuai kebutuhan kamu!
+            </p>
+            <p class="text-sm text-gray-600 mb-6 mt-4">*Harga terbatas untuk pelanggan bulan ini*</p>
+
+          <div class="bg-gray-100 p-8 rounded-xl shadow-lg inline-block">
+            <h3 class="text-2xl font-semibold mb-2">Promo Spesial!</h3>
+            <p class="text-gray-500 mb-4 line-through text-lg">Rp700.000</p>
+            <p class="text-green-600 text-3xl font-bold mb-4">Rp500.000</p>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left text-gray-700">
+                <li class="flex items-start gap-2">
+                  <span class="text-green-600 text-xl">✔</span>
+                  Desain responsif (mobile & desktop)
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-green-600 text-xl">✔</span>
+                  Domain & hosting gratis 1 tahun
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-green-600 text-xl">✔</span>
+                  3 Halaman utama (Home, Tentang, Kontak)
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-green-600 text-xl">✔</span>
+                  Integrasi WhatsApp untuk pemesanan cepat
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-green-600 text-xl">✔</span>
+                  SEO dasar untuk Google
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-green-600 text-xl">✔</span>
+                  Revisi 1x setelah selesai
+                </li>
+              </ul>
+            <p class="text-sm text-gray-600 mb-6 mt-4">*Harga terbatas untuk pelanggan bulan ini*</p>
+            <a href="https://wa.me/+62895701060973" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition duration-300">
+              Pesan Sekarang
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee">
+        <div class="container1">
+            <h2>Tools dan Teknologi yang Saya Gunakan</h2>
+            <p>Dalam setiap proyek "web development", saya memanfaatkan berbagai tools dan teknologi terkini untuk membangun solusi yang efisien dan modern. Berikut adalah beberapa tools dan framework yang sering saya gunakan dalam proses kreatif dan teknis.</p>
+
+            <div class="marquee-container">
+                <div class="marquee-wrapper">
+
+                    <div class="marquee-content">
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" width="70" loading="lazy">
+                            <p>HTML5</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS" width="70" loading="lazy">
+                            <p>CSS</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" width="70" loading="lazy">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind" width="70" loading="lazy">
+                            <p>Tailwind</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/flask/E34F26" alt="Flask" width="70" loading="lazy">
+                            <p>Flask</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/bootstrap/E34F26" alt="Bootstrap" width="70" loading="lazy">
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/gatsby/E34F26" alt="Gatsby" width="70" loading="lazy">
+                            <p>Gatsby</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/astro/E34F26" alt="Astro" width="70" loading="lazy">
+                            <p>Astro</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/react/E34F26" alt="React" width="70" loading="lazy">
+                            <p>React</p>
+                        </div>
+                    </div>
+
+                    <div class="marquee-content">
+                         <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" width="70" loading="lazy">
+                            <p>HTML5</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS" width="70" loading="lazy">
+                            <p>CSS</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" width="70" loading="lazy">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind" width="70" loading="lazy">
+                            <p>Tailwind</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/flask/E34F26" alt="Flask" width="70" loading="lazy">
+                            <p>Flask</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/bootstrap/E34F26" alt="Bootstrap" width="70" loading="lazy">
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/gatsby/E34F26" alt="Gatsby" width="70" loading="lazy">
+                            <p>Gatsby</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/astro/E34F26" alt="Astro" width="70" loading="lazy">
+                            <p>Astro</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.simpleicons.org/react/E34F26" alt="React" width="70" loading="lazy">
+                            <p>React</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section id="kontak" class="contact">
+            <div class="container">
+                <h2>Hubungi Saya</h2>
+                <center>
+                <p>Tertarik untuk berdiskusi mengenai proyek "web development" Anda, layanan pembuatan website, atau sekadar ingin menyapa? Jangan ragu untuk menghubungi saya. Saya terbuka untuk menjalin komunikasi, kolaborasi, atau peluang kerja baru.</p>
+                <a href="https://wa.me/+62895701060973?text=hallo%20ka"><img src="https://img.icons8.com/plasticine/100/000000/whatsapp.png" width="40" class="filter" loading="lazy"/></a>
+                <a href="https://github.com/IshikawaUta"><img src="https://img.icons8.com/plasticine/100/000000/github.png" width="40" class="filter" loading="lazy"/></a>
+                <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=komikers09@gmail.com"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png" width="40" class="filter" loading="lazy"/></a>
+                </center>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>&copy; 2025 Eka Saputra. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
