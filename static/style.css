@@ -1,8 +1,7 @@
-/* Isi file style.css yang Anda berikan */
 body {
-    font-family: 'Montserrat', sans-serif; /* Gunakan Montserrat sebagai font utama, sans-serif sebagai fallback */
-    font-weight: 400; /* Contoh: atur ketebalan default ke regular */
-    font-style: normal; /* Contoh: atur gaya default ke normal */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -84,7 +83,7 @@ nav li a {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 60px; /* Sesuaikan dengan tinggi header Anda */
+    top: 60px;
     left: 0;
     background-color: #002cbe;
     width: 100%;
@@ -97,7 +96,7 @@ nav li a {
 }
 
 main {
-    padding-top: 80px; /* Sesuaikan dengan tinggi header Anda */
+    padding-top: 80px;
 }
 
 .hero {
@@ -221,7 +220,6 @@ footer {
     width: 100%;
 }
 
-/* Media Queries untuk Responsif */
 @media (max-width: 768px) {
 nav ul {
     display: none;
@@ -258,7 +256,7 @@ nav ul {
 }
 
 .max-w-4xl {
-    max-width: 64rem; /* Equivalent to 1024px */
+    max-width: 64rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -269,8 +267,8 @@ nav ul {
 }
 
 .px-6 {
-    padding-left: 1.5rem; /* Equivalent to 24px */
-    padding-right: 1.5rem; /* Equivalent to 24px */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .text-center {
@@ -278,8 +276,8 @@ nav ul {
 }
 
 .text-3xl {
-    font-size: 1.875rem; /* Equivalent to 30px */
-    line-height: 2.25rem; /* Equivalent to 36px */
+    font-size: 1.875rem;
+    line-height: 2.25rem;
 }
 
 .font-bold {
@@ -287,7 +285,7 @@ nav ul {
 }
 
 .mb-4 {
-    margin-bottom: 1rem; /* Equivalent to 16px */
+    margin-bottom: 1rem;
 }
 
 .text-gray-600 {
@@ -295,7 +293,7 @@ nav ul {
 }
 
 .mb-8 {
-    margin-bottom: 2rem; /* Equivalent to 32px */
+    margin-bottom: 2rem;
 }
 
 .bg-gray-100 {
@@ -303,11 +301,11 @@ nav ul {
 }
 
 .p-8 {
-    padding: 2rem; /* Equivalent to 32px */
+    padding: 2rem;
 }
 
 .rounded-xl {
-    border-radius: 0.75rem; /* Equivalent to 12px */
+    border-radius: 0.75rem;
 }
 
 .shadow-lg {
@@ -319,8 +317,8 @@ nav ul {
 }
 
 .text-2xl {
-    font-size: 1.5rem; /* Equivalent to 24px */
-    line-height: 2rem; /* Equivalent to 32px */
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 .font-semibold {
@@ -328,7 +326,7 @@ nav ul {
 }
 
 .mb-2 {
-    margin-bottom: 0.5rem; /* Equivalent to 8px */
+    margin-bottom: 0.5rem;
 }
 
 .text-gray-500 {
@@ -340,15 +338,15 @@ nav ul {
 }
 
 .text-lg {
-    font-size: 1.125rem; /* Equivalent to 18px */
-    line-height: 1.75rem; /* Equivalent to 28px */
+    font-size: 1.125rem;
+    line-height: 1.75rem;
 }
 
 .text-green-600 {
     color: #2b6cb0;
 }
 
-.text-3xl { /* Mengulang, mungkin ada kekeliruan di class Tailwind */
+.text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
 }
@@ -368,7 +366,7 @@ nav ul {
 }
 
 .gap-4 {
-    gap: 1rem; /* Equivalent to 16px */
+    gap: 1rem;
 }
 
 .text-left {
@@ -388,21 +386,21 @@ nav ul {
 }
 
 .gap-2 {
-    gap: 0.5rem; /* Equivalent to 8px */
+    gap: 0.5rem;
 }
 
 .text-xl {
-    font-size: 1.25rem; /* Equivalent to 20px */
-    line-height: 1.75rem; /* Equivalent to 28px */
+    font-size: 1.25rem;
+    line-height: 1.75rem;
 }
 
 .text-sm {
-    font-size: 0.875rem; /* Equivalent to 14px */
-    line-height: 1.25rem; /* Equivalent to 20px */
+    font-size: 0.875rem;
+    line-height: 1.25rem;
 }
 
 .mt-4 {
-    margin-top: 1rem; /* Equivalent to 16px */
+    margin-top: 1rem;
 }
 
 .bg-blue-600 {
@@ -419,17 +417,17 @@ nav ul {
 }
 
 .py-2 {
-    padding-top: 0.5rem; /* Equivalent to 8px */
-    padding-bottom: 0.5rem; /* Equivalent to 8px */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
-.px-6 { /* Mengulang, sudah ada di atas */
+.px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
 
 .rounded-full {
-    border-radius: 9999px; /* Creates a pill shape */
+    border-radius: 9999px;
 }
 
 .transition {
@@ -465,40 +463,114 @@ nav ul {
     overflow: hidden;
     white-space: nowrap;
     margin-top: 20px;
-    width: 100%; /* Pastikan kontainer punya lebar untuk menjadi jendela */
+    width: 100%;
 }
 
 .marquee-wrapper {
-    display: flex; /* Atur marquee-content agar berjajar */
+    display: flex;
     flex-shrink: 0;
-    animation: scroll 10s linear infinite; /* Terapkan animasi ke wrapper */
-    width: fit-content; /* Akan menyesuaikan dengan lebar total konten di dalamnya */
+    animation: scroll 10s linear infinite;
+    width: fit-content;
 }
 
 .marquee-content {
     display: flex;
     flex-shrink: 0;
-    /* Biarkan lebar sesuai kontennya */
 }
 
 
 .tech-item {
     display: flex;
-    flex-direction: column; /* Tumpuk gambar dan teks secara vertikal */
+    flex-direction: column;
     align-items: center;
     margin-right: 80px;
 }
 
 .tech-item img {
     width: 70px;
-    height: auto; /* Tinggi otomatis untuk menjaga rasio */
+    height: auto;
 }
 
 @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* Geser ke kiri sebesar 50% dari lebar wrapper */
+    100% { transform: translateX(-50%); }
 }
 
 .marquee-container:hover .marquee-wrapper {
     animation-play-state: paused;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.contact-form div {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .g-recaptcha {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.message.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.message.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
 }

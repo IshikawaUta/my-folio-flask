@@ -7,6 +7,7 @@
     <meta property="og:title" content="Portofolio Eka Saputra | Web Developer">
     <meta name="description" content="Jelajahi portofolio proyek web development Eka Saputra, lihat demo proyek, dan temukan layanan pembuatan website profesional yang modern dan responsif.">
     <meta property="og:description" content="Jelajahi portofolio proyek web development Eka Saputra dan temukan layanan pembuatan website profesional.">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Portofolio Eka Saputra | Web Developer Profesional & Jasa Website</title>
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/foto-saya.png') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -262,6 +263,33 @@
                 <h2>Hubungi Saya</h2>
                 <center>
                 <p>Tertarik untuk berdiskusi mengenai proyek "web development" Anda, layanan pembuatan website, atau sekadar ingin menyapa? Jangan ragu untuk menghubungi saya. Saya terbuka untuk menjalin komunikasi, kolaborasi, atau peluang kerja baru.</p>
+                {% if error %}
+                    <p class="message error">{{ error }}</p>
+                {% endif %}
+                {% if success %}
+                    <p class="message success">{{ success }}</p>
+                {% endif %}
+
+                <form action="/kirim-pesan" method="POST" class="contact-form">
+                    <div>
+                        <label for="nama">Nama:</label>
+                        <input type="text" id="nama" name="nama" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="pesan">Pesan:</label>
+                        <textarea id="pesan" name="pesan" rows="6" required></textarea>
+                    </div>
+
+                    <div class="g-recaptcha" data-sitekey="6LelZjYrAAAAAMIOP7mJqj1HM__n4nF15LbN0L_0"></div>
+
+                    <button type="submit">Kirim Pesan</button>
+                </form>
                 <a href="https://wa.me/+62895701060973?text=hallo%20ka"><img src="https://img.icons8.com/plasticine/100/000000/whatsapp.png" width="40" class="filter" loading="lazy"/></a>
                 <a href="https://github.com/IshikawaUta"><img src="https://img.icons8.com/plasticine/100/000000/github.png" width="40" class="filter" loading="lazy"/></a>
                 <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=komikers09@gmail.com"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png" width="40" class="filter" loading="lazy"/></a>
