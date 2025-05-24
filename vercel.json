@@ -10,10 +10,6 @@
     ],
     "routes": [
     {
-      "src": "/ads.txt",
-      "dest": "/static/ads.txt"
-    },
-    {
         "src": "./static/(.*)",
         "dest": "./static/$1"
     },

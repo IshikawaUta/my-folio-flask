@@ -31,6 +31,10 @@ def index():
     success = request.args.get('success')
     return render_template('index.html', error=error, success=success)
 
+@app.route('/ads.txt')
+def ads_txt():
+    return send_from_directory(app.static_folder, 'ads.txt')
+
 @app.route('/robots.txt')
 def serve_robots():
     return send_from_directory(app.static_folder, 'robots.txt', mimetype='text/plain')
